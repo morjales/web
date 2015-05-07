@@ -1,0 +1,62 @@
+.attroll {width: 30px;}
+.hidden, .hidden1, .hidden2, .hidden3 {display: none}
+main .intro {text-align: center;}
+#aldesc {width:95%; height:3em; border: 1px solid grey; padding: 0px 10px 10px; text-align: center;}
+.slide {width:80%;}
+.dice {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+#change {
+  display:flex;
+  flex-wrap:nowrap;
+}
+#col {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  min-width:70%;
+}
+#s1, #s3{
+  float:left;
+  min-width:5%;
+}
+#s2 {
+  min-width:30%;
+  display:flex;
+  flex-wrap:wrap;
+  float:right;
+  clear:right;
+  flex-direction:column;
+}
+#racedesc, #classdesc{
+  border: 1px solid grey; max-width:80%; height: 15em;
+  text-align: center;
+}
+#racedesc, #classdesc {display:flex;}
+
+@media only screen and (max-width:699px){
+  #s3 {display:flex;}
+  #race, #class {max-width:50%;}
+}
+
+@media only screen and (max-width:999px){
+  #change{
+    flex-direction:column;
+  }
+  #s1 {display:flex;}
+  #aldesc {height:6em}
+  }
+  #s2 {
+    padding-top:2em;
+    flex-direction:row;
+  }
+  #racedesc{height:10em;}
+}
+
+@media only screen and (min-width:1000px){
+  #s2 {
+    flex-direction:column;
+  }
+}

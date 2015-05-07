@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>D&amp;D</title>
+    <link rel="stylesheet" href="puzzles.css">
+    <link rel="stylesheet" href="cc.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="cc.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dungeons</h1><h1>&amp;</h1><h1>Dragons</h1>
+    </header>
+
+    <div id="mbody">
+      <aside>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cc.html">Creator</a></li>
+          <li><a href="3.html">Starting</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <div class="intro">
+          <h2>Character Creator</h2>
+          <p>Welcome to the Character Creator.
+            <br>Here you will find several tools to help you create your D&amp;D character.
+            <br>Choose a Name, Gender, Alignment, Class, and Race.
+            <br>Roll to decide your character's Abilities.
+          </p>
+        </div>
+
+        <div id="change">
+          <div id="col">
+            <div id="s1">
+              <p>
+                <label>Name:<input type="text" name="name" id="cname"></label>
+                Gender:
+                <select name="gender">
+                  <option disabled selected>______</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+                Alignment:
+                <select name="alignment">
+                  <option disabled selected>_____________</option>
+                  <option>Lawful-Good</option>
+                  <option>Neutral-Good</option>
+                  <option>Chaotic-Good</option>
+                  <option>Lawful-Neutral</option>
+                  <option>True-Neutral</option>
+                  <option>Chaotic-Neutral</option>
+                  <option>Lawful-Evil</option>
+                  <option>Neutral-Evil</option>
+                  <option>Chaotic-Evil</option>
+                </select>
+              </p>
+              <br>
+              <div id="aldesc">
+                <div id="Lawful-Goodd" class="hidden"><p><strong>Crusader:</strong> Lawful good is the best alignment you can be because it combines honor and compassion.</p></div>
+                <div id="Neutral-Goodd" class="hidden"><p><strong>Rebel:</strong> Chaotic good is the best alignment you can be because it combines a good heart with a free spirit.</p></div>
+                <div id="Chaotic-Goodd" class="hidden"><p><strong>Benefactor:</strong> Neutral good is the best alignment you can be because it means doing what is good without bias for or against order.</p></div>
+                <div id="Lawful-Neutrald" class="hidden"><p><strong>Judge:</strong> Lawful neutral is the best alignment you can be because it means you are reliable and honorable without being a zealot.</p></div>
+                <div id="True-Neutrald" class="hidden"><p><strong>Undecided:</strong> Neutral is the best alignment you can be because it means you act naturally, without prejudice or compulsion.</p></div>
+                <div id="Chaotic-Neutrald" class="hidden"><p><strong>Free </strong>Spirit: Chaotic neutral is the best alignment you can be because it represents true freedom from both society’s restrictions and a do-gooder’s zeal.</p></div>
+                <div id="Lawful-Evild" class="hidden"><p><strong>Dominator:</strong> Lawful evil is the most dangerous alignment because it represents methodical, intentional, and frequently successful evil.</p></div>
+                <div id="Neutral-Evild" class="hidden"><p><strong>Malefactor:</strong> Neutral evil is the most dangerous alignment because it represents pure evil without honor and without variation.</p></div>
+                <div id="Chaotic-Evild" class="hidden"><p><strong>Destroyer:</strong> Chaotic evil is the most dangerous alignment because it represents the destruction not only of beauty and life but also of the order on which beauty and life depend.</p></div>
+              </div>
+            </div>
+
+            <div id="s3">
+              <div id="race">
+                <p>Race:
+                  <select name="race">
+                    <option disabled selected>_______</option>
+                    <option>Dwarf</option>
+                    <option>Elf</option>
+                    <option>Gnome</option>
+                    <option>Half-Elf</option>
+                    <option>Half-Orc</option>
+                    <option>Halfling</option>
+                    <option>Human</option>
+                  </select>
+                </p>
+                <div id="racedesc">
+                  <div id="Dwarfd" class="hidden1"><p>Dwarves favor earth tones in their clothing and prefer simple and functional garb. The skin can be very dark, but it is always some shade of tan or brown. Hair color can be black, gray, or brown. They average 4 feet tall and weigh as much as adult humans.  A dwarf's thick build, hardiness, and crass nature almost guarantees they are a Fighter.</p></div>
+                  <div id="Elfd" class="hidden1"><p>Elves average 5 feet tall and typically weigh just over 100 pounds. They live on fruits and grains, though they occasionally hunt for fresh meat. Elves prefer colorful clothes, usually with a green-and-gray cloak that blends well with the colors of the forest. Their intelligence and longevity gives them an advantage as Wizards.</p></div>
+                  <div id="Gnomed" class="hidden1"><p>Gnomes stand 3 to 3-1/2 feet tall and weigh 40 to 45 pounds. Their skin color ranges from dark tan to woody brown, their hair is fair, and their eyes can be any shade of blue. They generally wear leather or earth tones, though they decorate their clothes with intricate stitching or fine jewelry. Gnomes reach adulthood at about age 40, and they live about 350 years. While not the hardiest warriors, they are invaluable as Bards.</p></div>
+                  <div id="Half-Elfd" class="hidden1"><p>Half-elves are not truly an elf subrace, but they are often mistaken for elves. Half-elves usually inherit a good blend of their parents’ physical characteristics while surpassing most of their limitations.  They can become adept at almost any class.</p></div>
+                  <div id="Half-Orcd" class="hidden1"><p>These orc–human hybrids live in orc or human society (their status varies according to locals), or in communities of their own. Half-orcs usually inherit a blend of their parents' physical characteristics. They are as tall as humans but heavier, thanks to their muscle. They have greenish skin, sloping foreheads, jutting jaws, prominent teeth, and coarse body hair. Their brawn over brain lifestyle means they are typically Barbarians.</p></div>
+                  <div id="Halflingd" class="hidden1"><p>Halflings stand about 3 feet tall and usually weigh between 30 and 35 pounds. Halflings prefer simple, comfortable, and practical clothes. Unlike members of most races, they prefer actual comfort to shows of wealth. They reach adulthood in their early twenties and generally live into the middle of their second century. Halflings make for good Rogues.</p></div>
+                  <div id="Humand" class="hidden1"><p>Humans have among the greatest variety in their species. With all range of hair and eye colors, and personalities that span the entire spectrum, you can tell much less about a human just by looking at one than other species. It is because of this diversity that they are able to master any class and recieve certain bonuses other races cannot.</p></div>
+                  <figure>
+                    <img src="http://www.gamingforce.org/gfw/images/4/4b/Motsongir.png" class="hidden1" style="max-width:175%;" alt="Dwarf" id="Dwarfi">
+                    <img src="http://i.imgur.com/L0lwi.png" class="hidden1" style="max-width:300%;" alt="Elf" id="Elfi">
+                    <img src="http://i4.photobucket.com/albums/y105/Mortimier/Arch.png" class="hidden1" style="max-width:380%;" alt="Gnome" id="Gnomei">
+                    <img src="http://www.gamingforce.org/gfw/images/7/76/Bob.png" class="hidden1" style="max-width:150%;" alt="Half-Elf" id="Half-Elfi">
+                    <img src="http://i29.photobucket.com/albums/c288/Shadowed_Aegis/Snarl.png" class="hidden1" style="max-width:400%;" alt="Half-Orc" id="Half-Orci">
+                    <img src="http://i37.tinypic.com/346kwgj.png" class="hidden1" style="max-width:350%;" alt="Halfling" id="Halflingi">
+                    <img src="http://www.gamingforce.org/gfw/images/5/5b/Argumentus.png" class="hidden1" style="max-width:175%;" alt="Human" id="Humani">
+                  </figure>
+                </div>
+              </div>
+
+              <div id="class">
+                <p>Class:
+                  <select name="class">
+                    <option disabled selected>_____________</option>
+                    <option>Barbarian</option>
+                    <option>Bard</option>
+                    <option>Cleric</option>
+                    <option>Druid</option>
+                    <option>Fighter</option>
+                    <option>Monk</option>
+                    <option>Paladin</option>
+                    <option>Ranger</option>
+                    <option>Rogue</option>
+                    <option>Sorcerer</option>
+                    <option>Wizard</option>
+                  </select>
+                </p>
+                <div id="classdesc">
+                  <div id="Barbariand" class="hidden3"><p>Barbarians are exceptional fighters. They can use almost all weapons and armor, have increased chances to dodge attacks, and are faster than most, but are the only class who is not automatically literate. They have a unique ability to fly into a rage during battle, giving bonuses to Strength, Constitution, and morale while taking a penalty to Armor Class.</p></div>
+                  <div id="Bardd" class="hidden3"><p>Using light armor and simple weapons, Bards are not very battle-worthy. But they are unmatched in their ability to quickly turn the tables in a fight. By casting spells and signing songs, they can boost their ally’s stats dramatically, or drain enemies of their abilities. While not as technically proficient in spell work as Wizards, their songs can be exceedingly powerful.</p></div>
+                  <div id="Clericd" class="hidden3"><p>Clerics gain powers based on their alignment and the gods they serve. They have the unique ability to call on divine spells, which are different based on alignment. Where a Lawful Good alignment proves exceptionally useful for healing allies and boosting stats, a Cleric who follows the gods of Chaotic Evil will wreak havoc on his foes through his spell work.</p></div>
+                  <div id="Druidd" class="hidden3"><p>Druids are perfectly in tune with nature. Their senses are heightened and they can call on druidic spells to summon animals or have nature fight for them. Further, Druids can take on the shape of any animal they are familiar with. They are helpful to parties thanks to their abilities to gather information from nature and surrounding animals.</p></div>
+                  <div id="Fighterd" class="hidden3"><p>Where Barbarians fight to draw blood and focus more on dealing damage than worrying about worrying about how much they are taking, Fighters deal with battle as if it were an art. To take a life is not as important as the manner in which it was taken, but taking a blow is a shame. They have a wide variety of physical skills that make them deadly in combat.</p></div>
+                  <div id="Monkd" class="hidden3"><p>Monks are not proficient with armor or skills, but this is far from a weakness. By remaining unarmored and unencumbered they gain a myriad of passive bonuses that makes them deadly even without a weapon. Their skills come not from what they put on their body, but the energy they contain within. By channeling their inner energy they can overtake unsuspecting opponents with ease.</p></div>
+                  <div id="Paladind" class="hidden3"><p>Paladins are the beacon of light that shows their party the way. A versatile class that can be used as a healer or a fighter, Paladins are the tanks of their party. Their high charisma and divine calling make them extremely useful when gathering intelligence in towns, and also makes them among the most feared by anyone aligned with evil.</p></div>
+                  <div id="Rangerd" class="hidden3"><p>Spending most of their time in the wilderness, Rangers are very in touch with nature. They fall between Rogue, Druid, and Fighter as their skills are based on the environment and animals around them without a loss to their skill with weapons. A Ranger tends not to be as durable as other fighters, and normally prefers a ranged weapon to stay safe while still keeping an eye on the fight.</p></div>
+                  <div id="Rogued" class="hidden3"><p>Rogues are built for thieving, assassinating, and forging. Their incredible damage output and speed coupled with their ability to bluff, hide, or dodge through most anything makes them incredibly dangerous to fight against, but also makes them a powerful ally. A Rogue’s strength can be turned against him, however, if he is caught out in the open. They must plan before taking rash action.</p></div>
+                  <div id="Sorcererd" class="hidden3"><p>Sorcerers are not proficient with armor or shields, but their arcane abilities are unparalleled. While Wizards can be more hardy, Sorcerers do not need to prepare spells before casting them and have a much wider range of magics at their disposal. Deadly at long range, they can keep a large number of foes at bay with nothing but the most basic gear.</p></div>
+                  <div id="Wizardd" class="hidden3"><p>While Wizards are proficient with weapons, their real strength comes from the arsenal of magic at their disposal. Unlike Bards or Sorcerers, Wizards do not have a limit to how many spells they can learn, but must prepare them before being able to cast them. Having the ability to summon a hippogriff while calling a firestorm makes Wizards deadly in combat as long as they stay behind their hardier allies.</p></div>
+                  <figure>
+                    <img src="" class="hidden3" style="max-width:350%" alt="Barbarian" id="Barbariani">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Bard" id="Bardi">
+                    <img src="http://cdn.obsidianportal.com/images/496367/386_ca_cleric2.jpg" class="hidden3" style="max-width:300%" alt="Cleric" id="Clerici">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Druid" id="Druidi">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Fighter" id="Fighteri">
+                    <img src="monk.jpg" class="hidden3" style="max-width:350%" alt="Monk" id="Monki">
+                    <img src="https://gamingmage.files.wordpress.com/2011/04/paladin256.jpg" class="hidden3" style="max-width:350%" alt="Paladin" id="Paladini">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Ranger" id="Rangeri">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Rogue" id="Roguei">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Sorcerer" id="Sorcereri">
+                    <img src="" class="hidden3" style="max-width:350%" alt="Wizard" id="Wizardi">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="s2">
+            <div class="dice">
+              <input type="text" id="a1" class="attroll" readonly>
+              <input type="text" id="a2" class="attroll" readonly>
+              <input type="text" id="a3" class="attroll" readonly>
+              <input type="text" id="a4" class="attroll" readonly>
+              <input type="text" id="a5" class="attroll" readonly>
+              <input type="text" id="a6" class="attroll" readonly>
+            </div>
+            <button id="rollatt">Roll</button>
+            <p>Click to roll for your stats. Choose which number to apply to each stat.</p>
+            <div id="rolldesc">
+              <p>To see what a stat does, simply select it below</p>
+              <select name="rolldesc">
+                <option disabled selected>__________</option>
+                <option>Strength</option>
+                <option>Dexterity</option>
+                <option>Constitution</option>
+                <option>Intelligence</option>
+                <option>Wisdom</option>
+                <option>Charisma</option>
+              </select>
+            </div>
+            <div id="attdesc">
+              <p class="hidden2" id="Strengtha">Measures your muscle &amp; physical power. Especially important for Fighters, Barbarians, Paladins, Rangers, &amp; Monks. Limits carry capacity.</p>
+              <p class="hidden2" id="Dexteritya">Measures hand-eye coordination, agility, reflexes, &amp; balance. Most important for Rogues, users of light, medium, or no armor, &amp; archers.</p>
+              <p class="hidden2" id="Constitutiona">Represents your health &amp; stamina. A Constitution bonus increases hit points, so the ability is important for all classes.</p>
+              <p class="hidden2" id="Intelligencea">Determines how well you learn &amp; reason. Important for Wizards or any character who wants to have a wide assortment of skills.</p>
+              <p class="hidden2" id="Wisdoma">Describes willpower &amp; common sense. Represents being in tune with &amp; aware of surroundings. Important for Clerics, Druids, Paladins &amp; Rangers.</p>
+              <p class="hidden2" id="Charismaa">Measures persuasiveness, leadership, &amp; allure. Affects more than just how one is perceived. Charisma is most important for Paladins, Sorcerers, Bards, &amp; Clerics.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
