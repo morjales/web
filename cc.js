@@ -37,42 +37,22 @@ $(document).ready(function(){
     });
   });
 
-  $(window).resize(function(){
-    if ($(this).width() > 700){
-    $("select[name*='race']").change(function(){
-      $(".hidden1").hide();
-      $("select option:selected").each(function() {
-        var raced = $(this).text();
-        $("#"+raced+"d").show();
-        $("#"+raced+"i").show();
-      });
+  $("select[name*='race']").change(function(){
+    $(".hidden1").hide();
+    $("select option:selected").each(function() {
+      var raced = $(this).text();
+      $("#"+raced+"d").show();
+      $("#"+raced+"i").show();
     });
-
-    $("select[name*='class']").change(function(){
-      $(".hidden3").hide();
-      $("select option:selected").each(function() {
-        var clad = $(this).text();
-        $("[id='"+clad+"d']").show();
-        $("[id='"+clad+"i']").show();
-      });
-    });
-  } else {
-    $("select[name*='race']").change(function(){
-      $(".hidden1").hide();
-      $("select option:selected").each(function() {
-        var raced = $(this).text();
-        $("#"+raced+"d").show();
-      });
-    });
-    $("select[name*='class']").change(function(){
-      $(".hidden3").hide();
-      $("select option:selected").each(function() {
-        var clad = $(this).text();
-        $("[id='"+clad+"d']").show();
-      });
-    });
-  }
   });
 
-
+  $("select[name*='class']").change(function(){
+    $(".hidden3").hide();
+    $("select option:selected").each(function() {
+      var clad = $(this).text();
+      $("[id='"+clad+"d']").show();
+      $("[id='"+clad+"i']").show();
+    });
+  });
+  
 });
