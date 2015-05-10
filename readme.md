@@ -23,3 +23,23 @@ Animation:
 
 Toggle Visibility:
 	Extensive use of this on cc.html to make alignments, race, class, and stats visibile/invisible on selection.
+	
+## Grading
+
+1. **Readme** 5 points
+2. **Wireframes** 10 points
+3. **HTML** 10 points
+  1. Validation errors: -1pt
+  2. You included one of the four common Aria landmark roles. Two you mis-coded as `aria-label` instead of `role`: -1pt
+  3. The pages all have the same title, and one is just "D": -1pt
+  4. I could not find any instances of `srcset` or `picture`: -2pt
+4. **CSS** 6 points
+  1. You used `max-width` media queries instead of mobile first `min-width`: -2pt
+  2. Could not find an instance of a 3-up layout (nothing documented in the readme): -2pt
+5. **Javascript** 5 points
+  1. Page width is not output on load or resize: -1pt
+  2. Missing jQuery animation: -2pt
+  3. Missing required `Toggle an elements visual (css) style`: -2pt
+
+**Total:** 36
+
